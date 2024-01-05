@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefólio Miguel Miranda</title>
+    <meta name="description" content="Portfólio de Miguel Miranda - Designer Gráfico, Desenvolvedor Web, Motion Graphics Designer">
+    <meta name="keywords" content="design gráfico, desenvolvimento web, motion graphics, portfólio, designer, desenvolvedor">
+    <meta name="author" content="Miguel Miranda">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Portfólio de Miguel Miranda">
+    <meta property="og:description" content="Designer Gráfico, Desenvolvedor Web, Motion Graphics Designer">
+    <meta property="og:image" content="assets/about-img.webp">
+    <meta property="og:url" content="https://miguel0306.github.io/">
+    <meta property="og:type" content="website">
+    <meta http-equiv="Cache-Control" content="max-age=2592000">
+    <meta name="expires" content="Tue, 30-Nov-2024 00:00:00 GMT">
+    <link rel="icon" href="assets/iconlogo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/b8686c5020.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="js.js"></script>
+    <script src="pt.json" id="pt-lang" type="application/json"></script>
+    <script src="en.json" id="en-lang" type="application/json"></script>
+</head>
+    
+<body>
+    <main>
+        <div id="header">
+            <nav id="nav">
+                <a href="index.html"><img alt="logótipo" src="assets/logo1.webp" class="logo1"></a>
+                <ul id="sidemenu">
+                    <li><a data-translate="home" href="#header"></a></li>
+                    <li><a data-translate="about" href="#about"></a></li>
+                    <li><a data-translate="portfolio" href="#portfolio"></a></li>
+                    <li><a data-translate="contact" href="#contact"></a></li>
+                    <li id="closeMenuButton"><i class="fa-solid fa-xmark"></i></li>
+                </ul>
+                <div id="openMenuButton" class="fa-solid fa-bars"></div>
+            </nav>
+            <div class="container containerheader">
+                <div class="header-content">
+                    <div class="header-text">
+                        <p class="auto-input"></p>
+                        <h1><span class="first-name">Miguel</span><span class="second-name"> Miranda</span></h1>
+                        <p data-translate="course" class="sub-title"></p>
+                    </div>
+                    <div id="about-btn">
+                        <a href="#about"><button data-translate="about-btn" > <i class="fa-solid fa-caret-down fa-2xl" style="color: #229ccf;"></i></button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     <!--About Section-->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <picture>
+                            <source media="(min-width: 600px)" srcset="assets/about-img.webp">
+                            <source media="(max-width: 599px)" srcset="assets/about-img-mobile.webp">
+                            <img src="assets/about-img.webp" alt="fotografia de Miguel Miranda">
+                        </picture>
+                    </div>
+                    <div class="about-col-2">
+                        <h1 data-translate="about-tl" class="sub-title-about"></h1>
+                        <div class="tab-titles">
+                            <p data-translate="resume-tab" class="tab-links active-link" onclick="opentab(event,'resume')"></p>
+                            <p data-translate="education" class="tab-links" onclick="opentab(event, 'education')"></p>
+                            <p data-translate="experience" class="tab-links" onclick="opentab(event, 'experience')"></p>
+                            <p data-translate="skills" class="tab-links" onclick="opentab(event, 'skills')"></p>
+                        </div>
+                        <div class="tab-contents active-tab" id="resume">
+                            <p data-translate="resume"></p>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <div class="education">
+                                <ul>
+                                    <li>
+                                        <span class="maininfo-about">2021-2023</span><br>
+                                        <span class="horizontal1"><i class="fa-solid fa-user-graduate icon1"></i>&nbsp;</span><span data-translate="course-about" class="maininfo-about course-title"></span><br>
+                                        <span class="horizontal2"><i class="fa-solid fa-school">&nbsp;</i></span><span data-translate="school" class="school-title"></span><span> (IPVC)</span><br>
+                                        <span class="horizontal3"><i class="fa-solid fa-location-dot icon2"></i></span><span class="location"> Viana do Castelo</span>
+                                    </li>
+                                    <li class="vertical1">
+                                        <span class="maininfo-about">2018-2021</span><br>
+                                        <span class="horizontal1"><i class="fa-solid fa-user-graduate icon1">&nbsp;</i></span><span data-translate="course-about-12" class="maininfo-about course-title"></span><br>
+                                        <span class="horizontal2"><i class="fa-solid fa-school">&nbsp;</i></span><span class="school-title">Profitecla</span><br>
+                                        <span class="horizontal3"><i class="fa-solid fa-location-dot icon2"></i></span><span class="location"> Barcelos</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <div class="experience">
+                                <ul>
+                                    <li>
+                                        <span class="maininfo-about">Fev - </span><span data-translate="month" class="maininfo-about"></span><span class="maininfo-about"> 2023</span><br>
+                                        <span class="horizontal4"><i class="fa-solid fa-building icon3"></i></span><span class="maininfo-about exp-title-about">Az Negócios</span><br>
+                                        <span class="horizontal5"><i class="fa-solid fa-gear"></i></span><span data-translate="exp-1" class="exp-1-about"></span><br>
+                                        <span data-translate="exp-2" class="exp-2-about"></span><br>
+                                        <span data-translate="exp-3" class="exp-2-about"></span><br>
+                                        <span class="horizontal3"><i class="fa-solid fa-location-dot icon2"></i></span><span class="location"> Barcelos</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-contents" id="skills">
+                            <div class="skills">
+                                <div class="progress-container">
+                                    <p>Adobe Photoshop</p>
+                                    <div class="progress-bar">
+                                        <i class="fa-solid fa-square-caret-right"></i>
+                                        <span data-width="85%"></span><p>85%</p>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <p>Adobe After Effects</p>
+                                    <div class="progress-bar">
+                                        <i class="fa-solid fa-square-caret-right"></i>
+                                        <span data-width="75%"></span><p>75%</p>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <p>Adobe Illustrator</p>
+                                    <div class="progress-bar">
+                                        <i class="fa-solid fa-square-caret-right"></i>
+                                        <span data-width="70%"></span><p>70%</p>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <p>Adobe Premiere Pro</p>
+                                    <div class="progress-bar">
+                                        <i class="fa-solid fa-square-caret-right"></i>
+                                        <span data-width="50%"></span><p>50%</p>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <p>Meta Business Suite</p>
+                                    <div class="progress-bar">
+                                        <i class="fa-solid fa-square-caret-right"></i>
+                                        <span data-width="75%"></span><p>75%</p>
+                                    </div>
+                                </div>
+                                <div class="progress-container">
+                                    <p>HTML/CSS</p>
+                                    <div class="progress-bar">
+                                        <i class="fa-solid fa-square-caret-right"></i>
+                                        <span data-width="60%"></span><p>60%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     <!--portefolio-->
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 data-translate="port" class="sub-title-portfolio"></h1>
+                <div class="menu-portfolio">
+                    <p class="menu-portfolio2 active" data-translate="all" data-filter="all"></p>
+                    <p class="menu-portfolio2" data-translate="socialmedia" data-filter="socialmedia"></p>
+                    <p class="menu-portfolio2" data-translate="motiongraphics" data-filter="motiongraphics"></p>
+                </div>
+                <div class="work-list">
+                    <div class="work clickable-image socialmedia">
+                        <a href="/portfolio/solarenergy/solarenergy.html">
+                            <picture>
+                                <source media="(min-width: 600px)" srcset="assets/Solarenergy_cover_2.webp">
+                                <source media="(max-width: 599px)" srcset="assets/Solarenergy_cover_2_mobile.webp">
+                                <img src="assets/Solarenergy_cover_2.webp" alt="capa do projeto Solar Energy">
+                            </picture>
+                            <div class="layer">
+                                <h1 data-translate="solarenergy"></h1>
+                                <h2 data-translate="socialmediaport"></h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="work clickable-image socialmedia">
+                        <a href="/portfolio/hamburgueria/hamburgueria.html">
+                            <picture>
+                                <source media="(min-width: 600px)" srcset="assets/hamburgueria_cover_2.webp">
+                                <source media="(max-width: 599px)" srcset="assets/hamburgueria_cover_2_mobile.webp">
+                                <img src="assets/hamburgueria_cover_2.webp" alt="capa do projeto Hamburgueria">
+                            </picture>
+                            <div class="layer">
+                                <h1 data-translate="hamburguer"></h1>
+                                <h2 data-translate="socialmediaport"></h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="work clickable-image socialmedia motiongraphics">
+                        <a href="/portfolio/bangkok/bangkok.html">
+                            <picture>
+                                <source media="(min-width: 600px)" srcset="assets/Bang_cover_2.webp">
+                                <source media="(max-width: 599px)" srcset="assets/Bang_cover_2_mobile.webp">
+                                <img src="assets/Bang_cover_2.webp" alt="capa do projeto Bangkok">
+                            </picture>
+                        <div class="layer">
+                            <h1 class="onewordh1_two">Bangkok</h1>
+                            <h2 data-translate="social+motion" class="onewordh2_two"></h2>
+                        </div>
+                        </a>
+                    </div>
+                    <div class="work clickable-image socialmedia motiongraphics">
+                        <a href="/portfolio/dreamsakos/dreamsakos.html">
+                            <picture>
+                                <source media="(min-width: 600px)" srcset="assets/dreamsakos_cover_2.webp">
+                                <source media="(max-width: 599px)" srcset="assets/dreamsakos_cover_2_mobile.webp">
+                                <img src="assets/dreamsakos_cover_2.webp" alt="capa do projeto Dreamsakos">
+                            </picture>
+                            <div class="layer">
+                                <h1 class="onewordh1_three">Dreamsakos</h1>
+                                <h2 data-translate="social+motion" class="onewordh2_three"></h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="work clickable-image socialmedia">
+                        <a href="/portfolio/bestsol/bestsol.html">
+                            <picture>
+                                <source media="(min-width: 600px)" srcset="assets/bestsol_cover_2.webp">
+                                <source media="(max-width: 599px)" srcset="assets/bestsol_cover_2_mobile.webp">
+                                <img src="assets/bestsol_cover_2.webp" alt="capa do projeto Bestsol">
+                            </picture>
+                            <div class="layer">
+                                <h1 class="onewordh1">Bestsol</h1>
+                                <h2 data-translate="socialmediaport" class="onewordh2"></h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="work clickable-image socialmedia">
+                        <a href="/portfolio/e+3plus/e+3plus.html">
+                            <picture>
+                                <source media="(min-width: 600px)" srcset="assets/e+3plus_cover_2.webp">
+                                <source media="(max-width: 599px)" srcset="assets/e+3plus_cover_2_mobile.webp">
+                                <img src="assets/e+3plus_cover_2.webp" alt="capa do projeto E+3 Plus">
+                            </picture>
+                            <div class="layer">
+                                <h1>E+3 Plus</h1>
+                                <h2 data-translate="socialmediaport"></h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="work clickable-image socialmedia">
+                        <a href="/portfolio/ec3r/ec3r.html">
+                            <picture>
+                                <source media="(min-width: 600px)" srcset="assets/ec3r_cover_2.webp">
+                                <source media="(max-width: 599px)" srcset="assets/ec3r_cover_2_mobile.webp">
+                                <img src="assets/ec3r_cover_2.webp" alt="capa do projeto EC3R">
+                            </picture>
+                            <div class="layer">
+                                <h1 class="onewordh1">EC3R</h1>
+                                <h2 data-translate="socialmediaport" class="onewordh2"></h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="work clickable-image socialmedia motiongraphics">
+                        <a href="/portfolio/aznegocios/aznegocios.html">
+                            <picture>
+                                <source media="(min-width: 600px)" srcset="assets/aznegocios_cover_2.webp">
+                                <source media="(max-width: 599px)" srcset="assets/aznegocios_cover_2_mobile.webp">
+                                <img src="assets/aznegocios_cover_2.webp" alt="capa do projeto Az Negócios">
+                            </picture>
+                            <div class="layer">
+                                <h1 class="onewordh1_four">Az Negócios</h1>
+                                <h2 data-translate="social+motion" class="onewordh2_four"></h2>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="work clickable-image motiongraphics">
+                        <a href="/portfolio/ecgmdwm/ecgmdwm.html">
+                            <picture>
+                                <source media="(min-width: 600px)" srcset="assets/ecgmdwm_cover_2.webp">
+                                <source media="(max-width: 599px)" srcset="assets/ecgmdwm_cover_2_mobile.webp">
+                                <img src="assets/ecgmdwm_cover_2.webp" alt="capa do projeto ECGM/DWM">
+                            </picture>
+                            <div class="layer">
+                                <h1>ECGM DWM</h1>
+                                <h2 data-translate="motiongraphics"></h2>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     <!--contact-->
+
+        <div id="contact">
+            <div class="container-contact">
+                <div class="contact-left">
+                    <h1 class="sub-title-contact" data-translate="contactme"></h1>
+                    <h2 class="sub-title-contact-to" data-translate="throughmy"></h2>
+                    <div class="contactinfo">
+                        <div class="emailplussocialicons">
+                            <div class="social-icons">
+                                <a href="https://instagram.com/miguelmiranda03?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-brands fa-instagram"></i><p>Instagram</p></a>
+                                <a href="https://www.facebook.com/MiguelMiranda03" target="_blank"><i class="fa-brands fa-facebook"></i><p>Facebook</p></a>
+                                <a href="https://www.linkedin.com/in/miguel-miranda-5623a0294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin-in"></i><p>LinkedIn</p></a>
+                                <a href="https://www.behance.net/miguelmiranda44" target="_blank"><i class="fa-brands fa-behance"></i><p>Behance</p></a>
+                                <a href="https://github.com/Miguel0306" target="_blank"><i class="fa-brands fa-github"></i><p>GitHub</p></a>
+                                <a href="https://x.com/Miguelao_03?t=KWTxhaQ_4SKAN17MJFAPew&s=09" target="_blank"><i class="fa-brands fa-x-twitter"></i><p>Twitter</p></a>
+                                <a href="mailto:miguel.miranda@ipvc.pt"><i class="fa-solid fa-envelope"></i><p>Email</p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="forminfo">
+                        <p data-translate="orthisform"></p>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <div class="formbg">
+                        <div class="forminfo2">
+                            <p data-translate="orthisform"></p>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                        <form id="meuFormulario" action="https://formspree.io/f/meqbndpl" method="post">
+                            <input type="text" name="Name" placeholder="" data-translate="yourname" required autocomplete="on">
+                            <input type="email" name="Email" placeholder="Email" required autocomplete="on">
+                            <textarea name="Message" rows="3" placeholder="" required></textarea>
+                    </div>
+                            <div class="submitbtn">
+                                <button type="submit" class="btn btn2"><i class="fa-solid fa-paper-plane"></i><p data-translate="submit"></p></button>
+                                <button type="reset" class="btn btn3"><p class="preset" data-translate="reset"></p><i class="fa-solid fa-delete-left"></i></button>
+                            </div>
+                            <div class="privacyform">
+                                <label>
+                                    <div class="selectionplustext">
+                                        <input type="checkbox" name="opcao" value="Aceito">
+                                        <p data-translate="privacyform"></p>
+                                    </div>
+                                    <a class="linkprivacypolictform" href="/privacy/privacypolicy.html"><p data-translate="privacypolicy"></p></a>
+                                </label>
+                                <p class="messagenoinfo" data-translate="privacyformmessageno"></p>
+                                <p data-translate="privacyformmessage" style="display: none;"></p>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+
+      <!--footer-->
+
+        <div id="footer">
+            <div class="container-footer">
+                <div class="copyright">
+                    <p>Copyright © <a href="/index.html"> Miguel Miranda</a></p>
+                </div>
+                <div class="privacyandterms">
+                    <a href="privacy/privacypolicy.html"><p class="footerprivacytext" data-translate="privacypolicy"></p></a>
+                    <a href="privacy/cookiespolicy.html"><p class="footerprivacytext" data-translate="cookiepolicy"></p></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mode-toggle">
+            <input type="checkbox" id="dark-mode-toggle">
+            <label for="dark-mode-toggle" class="toggle-label">
+                <i class="fas fa-sun light-mode-icon"></i>
+                <i class="fas fa-moon dark-mode-icon"></i>
+            </label>
+        </div>
+
+        <div class="language-buttons">
+            <button id="pt-button" class="language-button">PT</button>
+            <button id="en-button" class="language-button">EN</button>
+        </div>
+
+        <div class="wrappercookie hide">
+            <i class="fa-solid fa-cookie-bite imgicon"></i>
+            <div class="contentcookie">
+                <header data-translate="cookiesconsent">Cookies Consent</header>
+                <p data-translate="cookiesmessage">This website uses cookies to improve your browsing experience. By clicking 'Accept', you agree to the use of cookies. To find out more about the cookies we use, see our cookie policy.</p>
+                <div class="buttons">
+                    <button class="itemcookie acceptbtn" data-translate="accept">Accept</button>
+                    <button class="itemcookie declinebtn" data-translate="decline">Decline</button>
+                    <p class="itemcookie learnmorebtn" data-translate="learnmore">Learn More</p>
+                    <p data-translate="cookieserrormessage" style="display: none;"></p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

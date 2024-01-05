@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portefólio Miguel Miranda</title>
+    <link rel="stylesheet" href="/css.css">
+    <link rel="stylesheet" href="/portfolio/bangkok/bangkok.css">
+    <script src="/portfolio/bangkok/bangkok.js"></script>
+    <script src="../../pt.json" id="pt-lang" type="application/json"></script>
+    <script src="../../en.json" id="en-lang" type="application/json"></script>
+    <script src="https://kit.fontawesome.com/b8686c5020.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/assets/iconlogo.webp" type="image/x-icon">
+</head>
+<body>
+
+    <div id="header_port">
+
+        <nav id="nav">
+            <a href="/index.html"><img src="/assets/logo1.webp" class="logo1"></a>
+            <ul id="sidemenu">
+                <li><a data-translate="home" href="/index.html#header"></a></li>
+                <li><a data-translate="about" href="/index.html#about"></a></li>
+                <li><a data-translate="portfolio" href="/index.html#portfolio"></a></li>
+                <li><a data-translate="contact" href="/index.html#contact"></a></li>
+                <li id="closeMenuButton"><i class="fa-solid fa-xmark"></i></li>
+            </ul>
+            <div id="openMenuButton" class="fa-solid fa-bars"></div>
+        </nav>
+        
+        <div class="container_port">
+            <div class="info">
+                <h1>Bangkok</h1>
+                <p data-translate="bangkokinfo"></p>
+            </div>       
+        </div>
+        
+        <div class="images_gallery_bangkok">
+            <div class="image-container">
+                <img src="/assets/bangkok/Publicação 33 (Divulgação).webp" onclick="FullView(this.src)">
+                <div class="img-hover-effect"  onclick="FullView(this.previousElementSibling.src)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="image-container">
+                <img src="/assets/bangkok/Publicação 32 (Divulgação).webp" onclick="FullView(this.src)">
+                <div class="img-hover-effect"  onclick="FullView(this.previousElementSibling.src)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="image-container">
+                <img src="/assets/bangkok/Publicação 25 (Dia da Criança).webp" onclick="FullView(this.src)">
+                <div class="img-hover-effect"  onclick="FullView(this.previousElementSibling.src)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="image-container">
+                <img src="/assets/bangkok/Publicação 24 (Divulgação).webp" onclick="FullView(this.src)">
+                <div class="img-hover-effect"  onclick="FullView(this.previousElementSibling.src)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="image-container">
+                <img src="/assets/bangkok/Publicação 23 (Menu) 1.webp" onclick="FullView(this.src)">
+                <div class="img-hover-effect"  onclick="FullView(this.previousElementSibling.src)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="image-container">
+                <img src="/assets/bangkok/Publicação 23 (Menu) 2.webp" onclick="FullView(this.src)">
+                <div class="img-hover-effect"  onclick="FullView(this.previousElementSibling.src)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="image-container">
+                <img src="/assets/bangkok/Publicação 23 (Menu) 3.webp" onclick="FullView(this.src)">
+                <div class="img-hover-effect"  onclick="FullView(this.previousElementSibling.src)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="image-container">
+                <img src="/assets/bangkok/Publicação 23 (Menu) 4.webp" onclick="FullView(this.src)">
+                <div class="img-hover-effect"  onclick="FullView(this.previousElementSibling.src)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="image-container">
+                <img src="/assets/bangkok/Publicação 23 (Menu) 5.webp" onclick="FullView(this.src)">
+                <div class="img-hover-effect"  onclick="FullView(this.previousElementSibling.src)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="image-container">
+                <img src="/assets/bangkok/Publicação 21 (Divulgação).webp" onclick="FullView(this.src)">
+                <div class="img-hover-effect"  onclick="FullView(this.previousElementSibling.src)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="image-container">
+                <img src="/assets/bangkok/Publicação 14 (Abertura).webp" onclick="FullView(this.src)">
+                <div class="img-hover-effect"  onclick="FullView(this.previousElementSibling.src)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+            <div class="image-container">
+                <img src="/assets/bangkok/Publicação 5 (Divulgação).webp" onclick="FullView(this.src)">
+                <div class="img-hover-effect"  onclick="FullView(this.previousElementSibling.src)"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></div>
+            </div>
+        </div>
+
+        <div id="FullImageView">
+            <img id="FullImage">
+            <span id="CloseButton" onclick="CloseFullView()"><i class="fa-solid fa-xmark"></i></span>
+            <button class="next-button" onclick="NextImage()"><i class="fa-solid fa-chevron-right"></i></button>
+            <button class="previous-button" onclick="PreviousImage()"><i class="fa-solid fa-chevron-right fa-rotate-180"></i></button>
+        </div>
+
+        <div class="video">
+            <video id="myVideo" src="/assets/bangkok/Animação_1 - 16.9.mp4" controls poster="/assets/bangkok/Animação_1 - Quadro.webp"></video>
+        </div>
+        
+        <div class="nextandpreviousbuttons">
+            <div class="next-buttonproj">
+                <a href="/portfolio/dreamsakos/dreamsakos.html">
+                    <button id="nextallButton" class="btn next-buttonprojbtn">
+                        <p class="firstp" data-translate="next"></p>
+                        <p class="secoundp">Dreamsakos</p>
+                        <p class="thirdp"><i class="fa-solid fa-circle-chevron-right"></i></p>
+                    </button>
+                </a>
+                <a href="/portfolio/dreamsakos/dreamsakos.html">
+                    <button id="nextsocialMediaButton" class="btn next-buttonprojbtn">
+                        <p class="firstp" data-translate="next"></p>
+                        <p class="secoundp">Dreamsakos</p>
+                        <p class="thirdp"><i class="fa-solid fa-circle-chevron-right"></i></p>
+                    </button>
+                </a>
+                <a href="/portfolio/dreamsakos/dreamsakos.html">
+                    <button id="nextmotionGraphicsButton" class="btn next-buttonprojbtn">
+                        <p class="firstp" data-translate="next"></p>
+                        <p class="secoundp">Dreamsakos</p>
+                        <p class="thirdp"><i class="fa-solid fa-circle-chevron-right"></i></p>
+                    </button>
+                </a>
+            </div>
+
+            <div class="previous-buttonproj">
+                <a href="/portfolio/hamburgueria/hamburgueria.html">
+                    <button id="previousallButton" class="btn previous-buttonprojbtn">
+                        <p class="firstp2" data-translate="previous"></p>
+                        <p class="secoundp2" data-translate="hamburgueria"></p>
+                        <p class="thirdp2"><i class="fa-solid fa-circle-chevron-left"></i></p>
+                    </button>
+                </a>
+                <a href="/portfolio/hamburgueria/hamburgueria.html">
+                    <button id="previoussocialMediaButton" class="btn previous-buttonprojbtn">
+                        <p class="firstp2" data-translate="previous"></p>
+                        <p class="secoundp2" data-translate="hamburgueria"></p>
+                        <p class="thirdp2"><i class="fa-solid fa-circle-chevron-left"></i></p>
+                    </button>
+                </a>
+                <a href="/portfolio/ecgmdwm/ecgmdwm.html">
+                    <button id="previousmotionGraphicsButton" class="btn previous-buttonprojbtn">
+                        <p class="firstp2" data-translate="previous"></p>
+                        <p class="secoundp2">ECGM DWM</p>
+                        <p class="thirdp2"><i class="fa-solid fa-circle-chevron-left"></i></p>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <!--footer-->
+
+        <div id="footer">
+            <div class="container-footer">
+                <div class="copyright">
+                    <p>Copyright © <a href="/index.html"> Miguel Miranda</a></p>
+                </div>
+                <div class="privacyandterms">
+                    <a href="/privacy/privacypolicy.html"><p class="footerprivacytext" data-translate="privacypolicy"></p></a>
+                    <a href="/privacy/cookiespolicy.html"><p class="footerprivacytext" data-translate="cookiepolicy"></p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mode-toggle">
+        <input type="checkbox" id="dark-mode-toggle">
+        <label for="dark-mode-toggle" class="toggle-label">
+            <i class="fas fa-sun light-mode-icon"></i>
+            <i class="fas fa-moon dark-mode-icon"></i>
+        </label>
+    </div>
+    
+    <div class="language-buttons">
+        <button id="pt-button" class="language-button">PT</button>
+        <button id="en-button" class="language-button">EN</button>
+    </div>
+
+</body>
+</html>
